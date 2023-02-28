@@ -51,8 +51,6 @@ function sendMessage(event) {
     const form = document.querySelector('#message-form');
     const elementInputMessage = form.elements['input-message'];
 
-    console.log('VALUE', elementInputMessage.value)
-
     if (elementInputMessage.value && stompClient) {
         
         var messageObj = {
